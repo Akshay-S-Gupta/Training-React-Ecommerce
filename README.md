@@ -15,3 +15,4 @@ If you are developing a production application, we recommend using TypeScript wi
 # Training-React-Ecommerce
 Its Just a simple Cake Store we tried.
 >>>>>>> 16ba45b8fd9a27066d071cb6047e5fa6393c55f6
+https://templatesjungle.com/demo/?url=https://demo.templatesjungle.com/cakestore/&purl=https://templatesjungle.gumroad.com/l/cake-store-bakery-shop-html-template
