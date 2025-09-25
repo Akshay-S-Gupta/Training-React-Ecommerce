@@ -1,42 +1,48 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Layout resets for full-width sections */
+.app-root {
+  background-color: #fff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Navbar */
+.navbar .nav-link {
+  font-weight: 500;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar .nav-link.text-uppercase {
+  letter-spacing: 0.12em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Hero */
+.hero .hero-slide {
+  min-height: 70vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.hero .hero-caption {
+  max-width: 720px;
+  padding: 4rem 0;
 }
 
-.card {
-  padding: 2em;
+/* Products */
+.product-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
-.read-the-docs {
-  color: #888;
+/* CTA banner */
+.cta-banner {
+  background: linear-gradient(90deg, #fff7f8 0%, #fff 100%);
+}
+
+/* Blog cards */
+.blog-card .card-img-top {
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer-brand {
+  line-height: 1;
 }

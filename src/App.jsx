@@ -1,30 +1,41 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import Shop from "./pages/Shop";
-import SingleProduct from "./pages/SingleProduct";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { CartProvider } from "./context/CartContext";
+import { useEffect } from "react";
+import "./App.css";
+import TopBar from "./components/TopBar";
+import MainNavbar from "./components/MainNavbar";
+import CartOffcanvas from "./components/CartOffcanvas";
+import HeroCarousel from "./components/HeroCarousel";
+import WelcomeSection from "./components/WelcomeSection";
+import ProductsSection from "./components/ProductsSection";
+import CtaBanner from "./components/CtaBanner";
+import FeaturesSection from "./components/FeaturesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import BlogSection from "./components/BlogSection";
+import NewsletterSection from "./components/NewsletterSection";
+import FooterSection from "./components/FooterSection";
 
-function App() {
+export default function App() {
+  useEffect(() => {
+    if (window.AOS) {
+      window.AOS.refresh();
+    }
+  });
+
   return (
-    <CartProvider>
-      <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/product/:id" element={<SingleProduct />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </CartProvider>
+    <div className="app-root">
+      <TopBar />
+      <MainNavbar />
+      <CartOffcanvas />
+      <HeroCarousel />
+      <WelcomeSection />
+      <ProductsSection />
+      <CtaBanner />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <BlogSection />
+      <NewsletterSection />
+      <FooterSection />
+    </div>
   );
 }
-export default App;
+
+
