@@ -1,11 +1,6 @@
 export default function MainNavbar() {
   return (
     <>
-      <div className="py-3">
-        <div className="container text-center">
-          <a className="navbar-brand m-0 fs-1" href="#home" style={{fontFamily:'cursive'}}>CakeStore</a>
-        </div>
-      </div>
       <nav className="navbar navbar-expand-lg bg-white border-bottom">
         <div className="container">
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
