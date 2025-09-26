@@ -1,16 +1,41 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { useEffect } from "react";
 import "./App.css";
+import TopBar from "./components/TopBar";
+import MainNavbar from "./components/MainNavbar";
+import CartOffcanvas from "./components/CartOffcanvas";
+import HeroCarousel from "./components/HeroCarousel";
+import WelcomeSection from "./components/WelcomeSection";
+import ProductsSection from "./components/ProductsSection";
+import CtaBanner from "./components/CtaBanner";
+import FeaturesSection from "./components/FeaturesSection";
+import TestimonialsSection from "./components/TestimonialsSection";
+import BlogSection from "./components/BlogSection";
+import NewsletterSection from "./components/NewsletterSection";
+import FooterSection from "./components/FooterSection";
 
-function App() {
-  const [count, setCount] = useState(0);
+export default function App() {
+  useEffect(() => {
+    if (window.AOS) {
+      window.AOS.refresh();
+    }
+  });
 
   return (
-    <>
-      <h1>Welcom Team</h1>
-    </>
+    <div className="app-root">
+      <TopBar />
+      <MainNavbar />
+      <CartOffcanvas />
+      <HeroCarousel />
+      <WelcomeSection />
+      <ProductsSection />
+      <CtaBanner />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <BlogSection />
+      <NewsletterSection />
+      <FooterSection />
+    </div>
   );
 }
 
-export default App;
+
