@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import productsData from './data/multi.js';
 import './multi.css';
-
+import MainNavbar from '../components/MainNavbar.jsx';
 
 
 const ProductTabs = ({ tabsData }) => {
@@ -99,6 +99,7 @@ const MultiProductPage = () => {
 
   return (
     <div className="page-bg">
+      <MainNavbar />
       {/* Product Select Row */}
       <div style={{ marginBottom: 32 }}>
         {productsData.map((prod, idx) => (
@@ -163,7 +164,7 @@ const MultiProductPage = () => {
           </div>
         </div>
       </div>
-      {/* <ProductTabs tabsData={product.tabsData} /> */}
+      <ProductTabs tabsData={product.tabsData} />
     </div>
   );
 };
