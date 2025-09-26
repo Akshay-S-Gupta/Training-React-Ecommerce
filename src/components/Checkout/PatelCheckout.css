@@ -1,0 +1,181 @@
+
+
+/* General Layout */
+.pastel-checkout-container {
+  background: linear-gradient(135deg, #f9f7f6, #eaf6fb 70%);
+  padding: 40px 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+.pastel-checkout-section {
+  background: #fff;
+  margin: 50px;
+  box-shadow: 0 6px 32px 0 rgba(182,216,241,0.15);
+  border-radius: 28px;
+  /* max-width: 1000px; */
+    justify-content: center;
+  width: 85%;
+  padding: 38px;
+  margin: 0 auto;
+}
+
+/* Two Columns */
+.pastel-checkout-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+@media (max-width: 900px) {
+  .pastel-checkout-two-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Titles */
+.pastel-title {
+  font-size: 2rem;
+  color: #72a1e5;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.pastel-cart-title {
+  font-size: 1.4rem;
+  color: #5ca2a2;
+}
+
+/* Labels & Inputs */
+.pastel-billing-form label {
+  display: block;
+  margin-bottom: 25px;
+  color: #6c7b7b;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.pastel-billing-form input.pastel-input,
+.pastel-billing-form select.pastel-input,
+.pastel-input,
+.pastel-textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 18px;
+  margin-top: 7px;
+  border: 1.5px solid #cce3fa;
+  border-radius: 10px;
+  background: #fbfbfd;
+  font-size: 1rem;
+  color: #31697a;
+  box-shadow: 0 0.5px 6px 0 rgba(114,161,229,0.04);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pastel-billing-form input.pastel-input:focus,
+.pastel-billing-form select.pastel-input:focus,
+.pastel-textarea:focus {
+  border-color: #72a1e5;
+  box-shadow: 0 0 10px 0 rgba(114,161,229,0.07);
+}
+
+.pastel-input.pastel-textarea {
+  resize: vertical;
+  min-height: 60px;
+  max-height: 190px;
+}
+
+/* Cart Totals Box */
+.pastel-cart-totals-section {
+  margin-top: 32px;
+  margin-bottom: 28px;
+}
+
+.pastel-cart-totals-box {
+  background: #eaf6fb;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px 0 rgba(182,216,241,0.09);
+  padding: 22px 24px;
+  font-size: 1.1rem;
+  color: #436784;
+  margin-top: 13px;
+}
+
+.pastel-cart-totals-box > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.pastel-cart-value {
+  font-weight: 700;
+  color: #169eff;
+}
+
+/* Payment Methods */
+.pastel-label {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #5ca2a2;
+  margin-bottom: 10px;
+}
+
+.pastel-payment-methods {
+  background: #f7fafc;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px 0 rgba(182,216,241,0.06);
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.pastel-payment-methods label {
+  display: block;
+  margin-bottom: 17px;
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.pastel-payment-methods input[type="radio"] {
+  margin-right: 9px;
+  accent-color: #72a1e5;
+}
+
+.pastel-payment-desc {
+  font-size: 0.92rem;
+  color: #5788a3;
+  margin-left: 28px;
+  margin-top: 3px;
+}
+
+/* Button */
+.pastel-btn {
+  background: linear-gradient(90deg, #72a1e5 40%, #5ca2a2 137%);
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 18px 0;
+  border: none;
+  border-radius: 13px;
+  width: 100%;
+  margin-top: 19px;
+  box-shadow: 0 2px 9px 0 rgba(182,216,241,0.16);
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.pastel-btn:hover {
+  background: linear-gradient(90deg, #466ecd 40%, #39977b 137%);
+  box-shadow: 0 8px 32px 0 rgba(114,161,229,0.12);
+}
+
+/* For overall smoothness */
+* {
+  box-sizing: border-box;
+}
+
