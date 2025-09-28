@@ -13,6 +13,10 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import BlogSection from "./components/BlogSection";
 import NewsletterSection from "./components/NewsletterSection";
 import FooterSection from "./components/FooterSection";
+import Cart from "./components/Cart/cart";
+import { CartProvider } from "./context/CartContext";
+import ProductGrid from "./components/ProductGrid/ProductGrid";
+
 
 import AboutUsPage from "./components/AboutUsPage"; // You'll create this
 
@@ -20,7 +24,6 @@ export default function App() {
   useEffect(() => {
     if (window.AOS) window.AOS.refresh();
   });
-
   return (
     <Router>
       <div className="app-root">
