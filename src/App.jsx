@@ -14,49 +14,25 @@ import BlogSection from "./components/BlogSection";
 import NewsletterSection from "./components/NewsletterSection";
 import FooterSection from "./components/FooterSection";
 
-import AboutUsPage from "./components/AboutUsPage"; // You'll create this
-
 export default function App() {
   useEffect(() => {
     if (window.AOS) window.AOS.refresh();
   });
 
   return (
-    <Router>
-      <div className="app-root">
-        <TopBar />
-        <MainNavbar />
-        <CartOffcanvas />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <HeroCarousel />
-                <WelcomeSection />
-                <ProductsSection />
-                <CtaBanner />
-                <FeaturesSection />
-                <TestimonialsSection />
-                <BlogSection />
-                <NewsletterSection />
-                <FooterSection />
-              </>
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <>
-                <AboutUsPage />
-                <NewsletterSection />
-                <FooterSection />
-              </>
-            }
-          />
-          {/* Add more routes as you need */}
-        </Routes>
-      </div>
-    </Router>
+    <div className="app-root">
+      <TopBar />
+      <MainNavbar />
+      <CartOffcanvas />
+      <HeroCarousel />
+      <WelcomeSection />
+      <ProductsSection />
+      <CtaBanner />
+      <FeaturesSection />
+      <TestimonialsSection />
+      <BlogSection />
+      <NewsletterSection />
+      <FooterSection />
+    </div>
   );
 }
