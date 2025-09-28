@@ -18,10 +18,10 @@ export default function App() {
   useEffect(() => {
     if (window.AOS) window.AOS.refresh();
   });
-
   return (
+<<<<<<<<< Temporary merge branch 1
     <div className="app-root">
-      <TopBar />
+      {/* <TopBar />
       <MainNavbar />
       <CartOffcanvas />
       <HeroCarousel />
@@ -32,7 +32,50 @@ export default function App() {
       <TestimonialsSection />
       <BlogSection />
       <NewsletterSection />
-      <FooterSection />
+      <FooterSection /> */}
+      {/* <Cart/> */}
+      <CartProvider>
+      <ProductGrid/>
+      {/* <Cart/> */}
+    </CartProvider>
     </div>
+=========
+    <Router>
+      <div className="app-root">
+        <TopBar />
+        <MainNavbar />
+        <CartOffcanvas />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <HeroCarousel />
+                <WelcomeSection />
+                <ProductsSection />
+                <CtaBanner />
+                <FeaturesSection />
+                <TestimonialsSection />
+                <BlogSection />
+                <NewsletterSection />
+                <FooterSection />
+              </>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <>
+                <AboutUsPage />
+                <NewsletterSection />
+                <FooterSection />
+              </>
+            }
+          />
+          {/* Add more routes as you need */}
+        </Routes>
+      </div>
+    </Router>
+>>>>>>>>> Temporary merge branch 2
   );
 }
