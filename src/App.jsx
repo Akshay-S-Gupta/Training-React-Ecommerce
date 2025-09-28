@@ -13,6 +13,7 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import BlogSection from "./components/BlogSection";
 import NewsletterSection from "./components/NewsletterSection";
 import FooterSection from "./components/FooterSection";
+import AboutUsPage from "./components/AboutUsPage";
 
 export default function App() {
   useEffect(() => {
