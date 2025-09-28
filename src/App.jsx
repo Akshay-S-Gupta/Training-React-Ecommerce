@@ -19,27 +19,6 @@ export default function App() {
     if (window.AOS) window.AOS.refresh();
   });
   return (
-<<<<<<<<< Temporary merge branch 1
-    <div className="app-root">
-      {/* <TopBar />
-      <MainNavbar />
-      <CartOffcanvas />
-      <HeroCarousel />
-      <WelcomeSection />
-      <ProductsSection />
-      <CtaBanner />
-      <FeaturesSection />
-      <TestimonialsSection />
-      <BlogSection />
-      <NewsletterSection />
-      <FooterSection /> */}
-      {/* <Cart/> */}
-      <CartProvider>
-      <ProductGrid/>
-      {/* <Cart/> */}
-    </CartProvider>
-    </div>
-=========
     <Router>
       <div className="app-root">
         <TopBar />
@@ -76,6 +55,5 @@ export default function App() {
         </Routes>
       </div>
     </Router>
->>>>>>>>> Temporary merge branch 2
   );
 }
