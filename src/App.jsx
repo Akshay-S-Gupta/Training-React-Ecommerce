@@ -12,6 +12,10 @@ import TestimonialsSection from "./components/TestimonialsSection";
 import BlogSection from "./components/BlogSection";
 import NewsletterSection from "./components/NewsletterSection";
 import FooterSection from "./components/FooterSection";
+import Cart from "./components/Cart/cart";
+import { CartProvider } from "./context/CartContext";
+import ProductGrid from "./components/ProductGrid/ProductGrid";
+
 
 export default function App() {
   useEffect(() => {
@@ -22,7 +26,7 @@ export default function App() {
 
   return (
     <div className="app-root">
-      <TopBar />
+      {/* <TopBar />
       <MainNavbar />
       <CartOffcanvas />
       <HeroCarousel />
@@ -33,7 +37,12 @@ export default function App() {
       <TestimonialsSection />
       <BlogSection />
       <NewsletterSection />
-      <FooterSection />
+      <FooterSection /> */}
+      {/* <Cart/> */}
+      <CartProvider>
+      <ProductGrid/>
+      {/* <Cart/> */}
+    </CartProvider>
     </div>
   );
 }
